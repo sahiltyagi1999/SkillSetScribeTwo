@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sahil Tyagi || Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header part of website  -->
+    <header class="header" >
+        <div class="logo">
+            <a href="#"><span>Sahil's</span>Portfolio</a>
+            
+        </div>
+        <div class="w-btn">
+        <div class="theme-btn">
+            <span class="active"><i class='bx bx-moon'></i></span>
+            <span class=""><i class='bx bx-sun '></i></span>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </div>
+        <nav class="nav-bar">
+            <a href="#home" class="active" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#services" style="--i:4">Service</a>
+            <a href="#portfolio" style="--i:5">Portfolio</a>
+            <a href="#contact" style="--i:6">Contact</a>
+        </nav>
+    </header>
+    <!-- Top progress button -->
+    <div id="progress" class="progress">
+        <a href="#home"><span id="progress-value"><i class='bx bxs-chevron-up'></i></span></a>
+    </div>
+<!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sahil Tyagi</h1>
+            <h3>And I'm a <span class="auto"></span></h3>
+            <p>I'm a Software Engineer and with my extensive knowledge of programming languages.</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sahil-tyagi-a9256420b/" style="--i:6" target="_blank"><i class='bx bxl-linkedin'></i></a>
+               
+                <a href="https://www.instagram.com/yeah_its_sahil_/" style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/yeah_its_sahil" style="--i:9" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <div class="Btn">
+                <a href="NON_CORE.pdf" class="btn" target="_blank">Download CV</a>
+            </div> 
+        </div>
+        <div class="home-image">
+            <img src="mypic.png">
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Untitled-design-33.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h3 class="title"> Developer</h3>
+            <p>
+                I'm a seasoned Software Engineer with expertise in diverse programming languages, methodologies, and engineering principles. Proficient in crafting high-quality code and resilient architectures, I excel in problem-solving and critical thinking. Quick to adapt to new technologies, I stay abreast of industry trends and best practices. Skilled in communication, I engage effectively with stakeholders, offering insights and clear explanations of complex technical concepts.</p>
+            <a href="#" class="btn" onclick="readMore(this)">Read More</a>
+        </div>
+
+    </section>
+
+<!-- Skill Section  -->
+    <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+    <div class="skill-bar">
+        <div class="bar">
+            <div class="info">
+                <span>HTML</span>
+            </div>
+            <div class="progress-line HTML">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>CSS</span>
+            </div>
+            <div class="progress-line CSS">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>JavaScript</span>
+            </div>
+            <div class="progress-line JS">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>MySQL</span>
+            </div>
+            <div class="progress-line MySql">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>JAVA<span>
+            </div>
+            <div class="progress-line Java">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>C++</span>
+            </div>
+            <div class="progress-line Cpp">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="redial-container">
+        <div class="circular-progress teamwork-redial">
+            <span class="progress-value teamwork">0%</span>
+        </div>
+        <span class="red-heading">Team Work</span>
+        </div>
+
+        <div class="redial-container">
+        <div class="circular-progress creativity-redial">
+            <span class="progress-value creativity">0%</span>
+        </div>
+        <span class="red-heading">Creativity</span>
+        </div>
+
+        <div class="redial-container">
+        <div class="circular-progress problem-redial">
+            <span class="progress-value problem">0%</span>
+        </div>
+        <span class="red-heading">Problem Solving</span>
+        </div>
+
+        <div class="redial-container">
+        
+        <div class="circular-progress communication-redial">
+            <span class="progress-value communication">0%</span>
+        </div>
+        <span class="red-heading">Communication</span>
+        </div>
+    </div>
+    </div>
+    </section>
+<!-- Services section -->
+    <section class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web development</h3>
+                    <p>Highlight your commitment to building websites that are responsive and adapt seamlessly to various devices and screen sizes.</p><p>Showcase your proficiency in both frontend and backend development, offering end-to-end solutions for clients and user-friendly interfaces that enhance the overall user experience.</p>
+
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxs-paint' ></i>
+                    <h3>Web Design</h3>
+                    <p>Create a visually appealing and well-organized portfolio showcasing a diverse range of design projects.Use high-quality images to highlight the aesthetics of your designs.</p>
+                    <p>Emphasize your proficiency in designing responsive websites that provide an optimal viewing experience across various devices.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bx-data'></i>
+                    <h3>DataBase</h3>
+                    <p>Expertise in designing scalable and efficient database architectures tailored to the specific needs of each project.Proven ability to optimize database structures for performance and data integrity. </p>
+                    <p>Proficiency in managing SQL databases, Mysql and NoSQL databases such as MongoDB.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+    </section>
+
+<!-- section portfolio -->
+
+    <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="1173099-best-developer-wallpaper-hd-1920x1280-htc.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Project 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facilis.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="OIP.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Project 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere?</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="R.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Project 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, voluptatibus.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+
+                
+    </div>
+    </section>
+
+<!-- Section Contact -->
+    <section class="contact" id="contact">
+    <h2 class="heading">
+        Conatact <span>Me!</span>
+    </h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="E-mail Address">
+            <input type="number" placeholder="Mobile Number">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Querry"></textarea>
+        <input type="submit" value="Send Message " class="btn">
+    </form>
+    </section>
+    <footer class="footer">
+        <div class="button whatsaap">
+            <div class="icon"><i class='bx bxl-whatsapp'></i></div>
+            <span>7985476796</span>
+        </div>
+        <div class="button mail">
+            <div  class="icon"><i class='bx bxl-gmail'></i></div>
+            <span>t.sahil@iitg.ac.in</span>
+        </div>
+    </footer>
+    
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed Js -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
