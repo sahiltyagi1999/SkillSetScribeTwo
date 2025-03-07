@@ -29,7 +29,7 @@ let teamWorkRedial = document.querySelector(".teamwork-redial"),
 teamWorkProgressValue = document.querySelector(".teamwork");
 
     let teamStartValue = 0,
-        teamEndValue = 80,
+        teamEndValue = 99,
         teamSpeed = 25;
     let teamProgress = setInterval(() => {
         
@@ -50,7 +50,7 @@ let creativityRedial = document.querySelector(".creativity-redial"),
 creativityProgressValue = document.querySelector(".creativity");
 
     let creativityStartValue = 0,
-        creativityEndValue = 90,
+        creativityEndValue = 99,
         creativitySpeed = 25;
 let creativityProgress = setInterval(() => {
         
@@ -71,7 +71,7 @@ let problemRedial = document.querySelector(".problem-redial"),
 problemProgressValue = document.querySelector(".problem");
 
     let problemStartValue = 0,
-        problemEndValue = 90,
+        problemEndValue = 99,
         problemSpeed = 25;
 let problemProgress = setInterval(() => {
         
@@ -91,7 +91,7 @@ let communicationRedial = document.querySelector(".communication-redial"),
 communicationProgressValue = document.querySelector(".communication");
 
     let communicationStartValue = 0,
-        communicationEndValue = 80,
+        communicationEndValue = 99,
         communicationSpeed = 25;
 let communicationProgress = setInterval(() => {
         

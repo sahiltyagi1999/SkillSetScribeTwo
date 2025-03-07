@@ -12,8 +12,8 @@
 }
 
 :root{
-    --bg-color: #14242d;
-    --second-bg-color: #323946;
+    --bg-color: #000000;
+    --second-bg-color: #000000;
     --text-color:#fff;
     --main-color: #0ef;
 }
@@ -245,7 +245,7 @@ h2 span{
     gap: 2rem;
 }
 .about-img img{
-    width: 35vw;
+    width: 38vw;
 }
 .heading{
     text-align: center;
@@ -256,7 +256,7 @@ h2 span{
     line-height: 1.2;
 }
 .about-content h3{
-    font-size: 2.6rem;
+    font-size: .6rem;
 }
 .hide{
     display: none;
@@ -347,10 +347,10 @@ box-shadow: 0 0 .8rem var(--bg-color);
     width: 90%;
 }
 .bar .progress-line.MySql span{
-    width: 75%;
+    width: 90%;
 }
 .bar .progress-line.Java span{
-    width: 50%;
+    width: 90%;
 }
 .bar .progress-line.Cpp span{
     width: 100%;
@@ -481,39 +481,47 @@ box-shadow: 0 0 .8rem var(--bg-color);
     margin: 1rem 0 3.5rem;
 }
 
-
-
-
-.portfolio h2{
+/* Portfolio Heading */
+.portfolio h2 {
     margin: 3rem 0 4rem 0;
-}
-.portfolio-container{
+  }
+  
+  /* Container wrapping all portfolio items in a two-column grid */
+  .portfolio-all-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-}
-.portfolio-container .portfolio-box{
-    position:relative;
+  }
+  
+  /* Common styling for all portfolio boxes */
+  .portfolio-box {
+    position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
-    display: flex;
-}
-.portfolio-box img{
+    /* Uniform fixed height */
+    height: 30rem;
+  }
+  
+  /* Image styling */
+  .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
-}
-.portfolio-box:hover img{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+  .portfolio-box:hover img {
     transform: scale(1.1);
-}
-.portfolio-box .portfolio-layer{
+  }
+  
+  /* Overlay styling */
+  .portfolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.2), var(--main-color));
+    background: linear-gradient(rgba(0,0,0,0.2), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,19 +529,21 @@ box-shadow: 0 0 .8rem var(--bg-color);
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
-}
-.portfolio-box:hover .portfolio-layer{
+    transition: 0.5s ease;
+  }
+  .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
-}
-.portfolio-layer h4{
+  }
+  
+  /* Overlay text styling */
+  .portfolio-layer h4 {
     font-size: 2rem;
-}
-.portfolio-layer p{
+  }
+  .portfolio-layer p {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem ;
-}
-.portfolio-layer a{
+    margin: 0.3rem 0 1rem;
+  }
+  .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -541,51 +551,44 @@ box-shadow: 0 0 .8rem var(--bg-color);
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
-}
-.portfolio-layer a i{
+  }
+  .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
-}
+  }
+  
 
 
-.contact{
-    margin-top: 10rem;
-}
-.contact h2{
-    margin-bottom: 3rem;
-}
-.contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .contact form .input-box input,
-.contact form textarea
-{
+.contact form textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background:var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .8rem 0;
-    border: none;
+    background: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.8rem 0;
+    border: 1px solid var(--text-color); /* Add a visible border */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Light shadow for contrast */
 }
-.contact form .input-box input{
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    outline: 2px solid var(--main-color); /* Highlight input field on focus */
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.contact form .input-box input {
     width: 49%;
+    background: var(--bg-color); /* Make sure the input box is visible */
 }
-.contact form textarea{
+
+.contact form textarea {
     resize: none;
     margin-bottom: 2rem;
+    background: var(--bg-color); /* Ensuring visibility in dark mode */
 }
+
 footer{
     display: flex;
     justify-content: center;
@@ -805,3 +808,5 @@ footer .button span{
         width: 90vw;
     }
 }
+
+
