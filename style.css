@@ -390,10 +390,10 @@ box-shadow: 0 0 .8rem var(--bg-color);
     content: "90%";
 }
 .bar .progress-line.MySql span::after{
-    content: "75%";
+    content: "95%";
 }
 .bar .progress-line.Java span::after{
-    content: "50%";
+    content: "90%";
 }
 .bar .progress-line.Cpp span::after{
     content: "100%";
